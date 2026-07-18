@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winter Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-snowflake">❄</span>
+          <span class="logo-text">WINTER</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link" data-section="home">HOME</a></li>
+          <li>
+            <a href="#gallery" class="nav-link" data-section="gallery"
+              >GALLERY</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-section="contact"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SLIDESHOW ===== -->
+    <section class="hero" id="home">
+      <div class="hero-slides">
+        <div
+          class="slide active"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=1600&q=85&quot;);
+          "
+        ></div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=85&quot;);
+          "
+        ></div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=1600&q=85&quot;);
+          "
+        ></div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1477601263568-180e2c6d046e?w=1600&q=85&quot;);
+          "
+        ></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Winter Moments</h1>
+        <p class="hero-subtitle">A COLLECTION OF FROZEN BEAUTY</p>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery-section" id="gallery">
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="landscapes">LANDSCAPES</button>
+        <button class="filter-btn" data-filter="decorations">
+          DECORATIONS
+        </button>
+        <button class="filter-btn" data-filter="food">FOOD</button>
+        <button class="filter-btn" data-filter="family">FAMILY</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div
+          class="gallery-item"
+          data-category="landscapes"
+          data-title="Mountain Peak"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+            alt="Mountain Peak"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Mountain Peak</span>
+            <span class="overlay-cat">Landscapes</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="family"
+          data-title="Family Joy"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80"
+            alt="Family Joy"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Family Joy</span>
+            <span class="overlay-cat">Family</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="food" data-title="Hot Cocoa">
+          <img
+            src="https://images.unsplash.com/photo-1517578239113-b03992dcdd25?w=600&q=80"
+            alt="Hot Cocoa"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Hot Cocoa</span>
+            <span class="overlay-cat">Food</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="decorations"
+          data-title="Red Berries"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=600&q=80"
+            alt="Red Berries"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Red Berries</span>
+            <span class="overlay-cat">Decorations</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="family"
+          data-title="Children Playing"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80"
+            alt="Children Playing"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Children Playing</span>
+            <span class="overlay-cat">Family</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="landscapes"
+          data-title="Foggy Pines"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=600&q=80"
+            alt="Foggy Pines"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Foggy Pines</span>
+            <span class="overlay-cat">Landscapes</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="decorations"
+          data-title="Christmas Tree"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=600&q=80"
+            alt="Christmas Tree"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Christmas Tree</span>
+            <span class="overlay-cat">Decorations</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="food"
+          data-title="Sweet Donuts"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80"
+            alt="Sweet Donuts"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Sweet Donuts</span>
+            <span class="overlay-cat">Food</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="family"
+          data-title="Outdoor Gathering"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&q=80"
+            alt="Outdoor Gathering"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Outdoor Gathering</span>
+            <span class="overlay-cat">Family</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="landscapes"
+          data-title="Autumn Road"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1477601263568-180e2c6d046e?w=600&q=80"
+            alt="Autumn Road"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Autumn Road</span>
+            <span class="overlay-cat">Landscapes</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="decorations"
+          data-title="Gift Wrapped"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&q=80"
+            alt="Gift Wrapped"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Gift Wrapped</span>
+            <span class="overlay-cat">Decorations</span>
+          </div>
+        </div>
+
+        <div
+          class="gallery-item"
+          data-category="food"
+          data-title="Cream Donuts"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80"
+            alt="Cream Donuts"
+            loading="lazy"
+          />
+          <div class="gallery-overlay">
+            <span class="overlay-title">Cream Donuts</span>
+            <span class="overlay-cat">Food</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Capturing the serene beauty of winter landscapes has been my
+              passion for over a decade. Each photograph tells a story of frozen
+              moments, quiet snowfalls, and the peaceful stillness that blankets
+              the world during the coldest months.
+            </p>
+            <p>
+              From the majestic mountain peaks covered in pristine snow to
+              intimate family moments wrapped in winter warmth, my work
+              celebrates the unique beauty that this season brings. Through my
+              lens, I aim to preserve the fleeting magic of winter — the way
+              light dances on ice crystals, the cozy comfort of holiday
+              gatherings, and the breathtaking landscapes transformed by snow.
+            </p>
+            <p>
+              My photography has been featured in various publications and
+              exhibitions, and I continue to explore new ways to capture the
+              essence of winter's wonder.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num">20+</span>
+                <span class="stat-label">YEARS<br />EXPERIENCE</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">500+</span>
+                <span class="stat-label">PHOTOS<br />CAPTURED</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1541367777708-7905fe3296c0?w=500&q=80"
+              alt="Artist at work"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-subtitle">
+          Let's work together to capture your winter moments
+        </p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>NAME</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>EMAIL</label>
+            <input type="email" />
+          </div>
+          <div class="form-group">
+            <label>MESSAGE</label>
+            <textarea rows="5"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-info">
+        <span>✉ hello@winterportfolio.com</span>
+        <span>📞 +1 (000) 123-4567</span>
+        <span>📍 Contact Us</span>
+      </div>
+      <p class="footer-copy">© 2025 Winter Portfolio · Designed by Tooplate</p>
+    </footer>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <button class="lb-close" id="lbClose">✕</button>
+      <button class="lb-prev" id="lbPrev">‹</button>
+      <button class="lb-next" id="lbNext">›</button>
+      <div class="lb-content">
+        <img id="lbImg" src="" alt="" />
+        <div class="lb-caption">
+          <h3 id="lbTitle"></h3>
+          <p id="lbCat"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
